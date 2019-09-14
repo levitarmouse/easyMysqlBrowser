@@ -1,0 +1,6 @@
+{
+    "require": {
+        "levitarmouse/core": "dev-beta1",
+        "levitarmouse/kiss_orm": "dev-beta1"
+    }
+}

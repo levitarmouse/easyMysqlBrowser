@@ -1,0 +1,70 @@
+[
+    {
+        "name": "levitarmouse/core",
+        "version": "dev-beta1",
+        "version_normalized": "dev-beta1",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/levitarmouse/KISS-CORE.git",
+            "reference": "514b3ecb8ba0dc2ddf2bba5e63155fb28495c554"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/levitarmouse/KISS-CORE/zipball/514b3ecb8ba0dc2ddf2bba5e63155fb28495c554",
+            "reference": "514b3ecb8ba0dc2ddf2bba5e63155fb28495c554",
+            "shasum": ""
+        },
+        "require": {
+            "levitarmouse/core": "dev-beta1",
+            "php": ">=5.6"
+        },
+        "time": "2018-09-22T22:59:22+00:00",
+        "type": "library",
+        "installation-source": "source",
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "proprietary"
+        ],
+        "authors": [
+            {
+                "name": "Gabriel Prieto",
+                "email": "levitarmouse@gmail.com"
+            }
+        ],
+        "description": "Group of reusable classes. Uses PHPMAILER, development of Andy Prevost and Marcus Bointon. Thanks to both."
+    },
+    {
+        "name": "levitarmouse/kiss_orm",
+        "version": "dev-beta1",
+        "version_normalized": "dev-beta1",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/levitarmouse/KISS-ORM.git",
+            "reference": "847ebe2ddb70a59a66f5a9e995dca699b6465de1"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/levitarmouse/KISS-ORM/zipball/847ebe2ddb70a59a66f5a9e995dca699b6465de1",
+            "reference": "847ebe2ddb70a59a66f5a9e995dca699b6465de1",
+            "shasum": ""
+        },
+        "require": {
+            "levitarmouse/core": "dev-beta1",
+            "php": ">=5.6"
+        },
+        "time": "2018-09-22T22:59:33+00:00",
+        "type": "library",
+        "installation-source": "source",
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "proprietary"
+        ],
+        "authors": [
+            {
+                "name": "Gabriel Prieto",
+                "email": "levitarmouse@gmail.com"
+            }
+        ],
+        "description": "Active record ORM"
+    }
+]
