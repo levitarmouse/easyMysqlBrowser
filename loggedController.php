@@ -101,7 +101,7 @@ function descTables() {
         $allTables = getAllTables();
 
         foreach ($allTables as $key => $table) {
-            $query .= "DESC ".$table;
+            $query = "DESC ".$table;
 
             $collection = $model->select($query);
 

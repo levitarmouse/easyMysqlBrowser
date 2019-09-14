@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <?php
-include_once './vendor/levitarmouse/kiss_orm/config/Bootstrap.php';
+include_once './lmvendor/levitarmouse/kiss_orm/config/Bootstrap.php';
 
 session_start();
 
