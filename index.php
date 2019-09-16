@@ -60,13 +60,13 @@ if ($host && $user && $pass) {
     $ingresando = true;
     login($host, $user, $pass);
     $loged = isset($_SESSION['logged']) ? $_SESSION['logged'] : 'NO';
-    header("location: http://localhost/emysqlb");
+    header("location: http://localhost/emb");
 }
 
 if ($logout == 'yes') {
     session_destroy();
     $loged = isset($_SESSION['logged']) ? $_SESSION['logged'] : 'NO';
-    header("location: http://localhost/emysqlb");
+    header("location: http://localhost/emb");
 }
 
 

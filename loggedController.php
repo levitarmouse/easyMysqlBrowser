@@ -49,7 +49,8 @@ function showTables() {
 
     $db = $_SESSION['db'];
 
-    $query .= "SHOW TABLES";
+//    $query = "SHOW TABLES";
+    $query = "SELECT table_name FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA = '{$db}' order by table_name";
 
     $collection = $model->select($query);
 
@@ -57,7 +58,7 @@ function showTables() {
         echo('<b>Tablas</b><br>');
         echo "<form method='POST'>";
         foreach ($collection as $key => $value) {
-            $key = 'Tables_in_'.$db;
+            $key = 'table_name';
             $btn = '<input name="table" type="submit" value="'.$value[$key].'">';
             echo $btn;
         }
@@ -104,13 +105,18 @@ function descTables() {
             $query = "DESC ".$table;
 
             $collection = $model->select($query);
+            
+            $oTable = new stdClass();
+            $oTable->table = $table;
+            $oTable->fields = $collection;
+            
+//            $desc = json_encode($oTable, JSON_PRETTY_PRINT);
+            $desc = json_encode($oTable);
 
-            $desc = json_encode($collection, JSON_PRETTY_PRINT);
-
-            echo '<h3>'.$table.'</h3>';
-            echo '<pre>';
-            echo $desc;
-            echo '</pre>';
+//            echo '<h3>'.$table.'</h3>';
+//            echo '<pre>';
+            echo '<br>'.'<br>'.$desc.'<br>';
+//            echo '</pre>';
         }
 
     }
